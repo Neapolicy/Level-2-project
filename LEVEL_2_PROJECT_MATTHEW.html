@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+<html>  
+	<head>  
+		<title>Sea Animal Card Matching</title>  
+		<link rel="stylesheet" href="LEVEL_2_EXTERNAL_CSS.css" />
+		<style></style>
+		<script src="LEVEL_2_EXTERNAL_JS.js"></script>
+		<script>
+			function initialize(){
+				assignFunctions();				
+			}
+		</script>  
+	</head>  
+	<body onload="initialize();">  
+		<div class = "left">
+			<button class = "leftReset" onclick="initialize()">Reset Game!</button>
+			<p id = "score">Your Score: 0</p>
+			<div class = "leftCenter">
+				<p id="winText"></p>
+			</div>
+		</div>
+		<div class="center">
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		  <button></button>
+		</div>
+		<div class="right">
+			<div>
+				<p>How to play</p>
+			</div>
+			<div class ="rules">
+				<p>
+					The rules are simple, match two identical cards until all cards have been revealed. 
+					You get one point for every card you reveal, so you want to beat the game with as few points as possible!
+				</p>
+			</div>
+		</div>
+	</body>  
+</html>  

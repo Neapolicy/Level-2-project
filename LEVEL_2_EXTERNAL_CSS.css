@@ -1,0 +1,77 @@
+.center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 50vw; 
+    height: 90vh; 
+    box-sizing: border-box;
+}
+
+.center button {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-size: cover; /* Ensure the image covers the button */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+}
+
+.left {
+    float: left;
+    width: 24%;
+    height: 95vh;
+
+    font-size: 36pt;
+    font-family: 'Segoe UI';
+
+    text-align: center;
+    justify-content: center;
+}
+
+.left button {
+    position: absolute;
+    left: 5%; /* Align to the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    
+    background-color: lightblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 15vw; 
+    height: 5vh; 
+    font-size: 24pt;
+    font-family:'Segoe UI';
+}
+
+
+.leftCenter{
+    word-wrap: break-word; /*moves word into new lines if it goes past the div*/
+
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+
+.right {
+    float: right;
+    width: 24%; /* Ensure this width is enough for your content */
+    height: 12vh;
+    font: bold 48pt 'Segoe UI';
+    text-align: center;
+    justify-content: center;
+}
+
+.right .rules{
+    margin-top: 14%;
+    font: 24pt 'Segoe UI';
+}
