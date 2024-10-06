@@ -76,7 +76,6 @@ function reveal(button) {
     if (button !== buttonPrevious){
          score ++;
          cardsRevealed ++; //only compares if two unique cards have been revealed
-         console.log("score added!");
       }
     updateScore();
     twoCards(button);
@@ -107,11 +106,7 @@ function twoCards(button){
 }
 
 function trackOccurrence(image) {
-    if (occurrences[image]) {
-        occurrences[image]++; // Increment if already present
-    } else {
-        occurrences[image] = 1; // Initialize to 1 if not present
-    }
+    occurrences[image] ? occurrences[image]++ : occurrences[image] = 1;
 }
 
 function checkForCorrectness(buttonOne, buttonTwo){
